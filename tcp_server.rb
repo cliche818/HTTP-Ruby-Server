@@ -1,6 +1,6 @@
 require 'socket'
 
-server = TCPServer.new(5678)
+server = TCPServer.new(5679)
 
 while true
   session = server.accept

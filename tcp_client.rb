@@ -1,9 +1,11 @@
 require 'socket'
 
-server = TCPSocket.new('localhost', 5678)
+server = TCPSocket.new('localhost', 5679)
 
-line = server.gets
+puts server
 
-puts line
+while line = server.gets
+  puts line
+end
 
 server.close
